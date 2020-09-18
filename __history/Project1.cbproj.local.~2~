@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/09/14 09:48:05.000.219,=C:\Users\ralfano\Documents\Embarcadero\Studio\Projets\File1.cpp</Transaction>
+    <Transaction>2020/09/14 09:48:05.000.000,=C:\Users\ralfano\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
+    <Transaction>2020/09/14 11:38:29.000.657,=C:\Users\ralfano\Desktop\MS8\SNImage -Etudiants.h</Transaction>
+    <Transaction>2020/09/14 11:38:29.000.657,=C:\Users\ralfano\Desktop\MS8\SNImage-Etudiants.cpp</Transaction>
+    <Transaction>2020/09/14 11:38:45.000.491,C:\Users\ralfano\Desktop\MS8\SNImage -Etudiants.h=</Transaction>
+    <Transaction>2020/09/14 11:38:49.000.920,C:\Users\ralfano\Desktop\MS8\SNImage-Etudiants.cpp=</Transaction>
+    <Transaction>2020/09/14 11:39:08.000.974,=P:\Informatique et reseau\traitement d'image\MS8\SNImage-Etudiants.cpp</Transaction>
+    <Transaction>2020/09/14 11:39:08.000.966,=P:\Informatique et reseau\traitement d'image\MS8\SNImage -Etudiants.h</Transaction>
+    <Transaction>2020/09/14 11:39:25.000.079,P:\Informatique et reseau\traitement d'image\MS8\SNImage-Etudiants.cpp=</Transaction>
+    <Transaction>2020/09/14 11:39:25.000.060,P:\Informatique et reseau\traitement d'image\MS8\SNImage -Etudiants.h=</Transaction>
+    <Transaction>2020/09/14 11:40:09.000.875,C:\Users\ralfano\Documents\Embarcadero\Studio\Projets\File1.cpp=P:\Informatique et reseau\traitement d'image\Nouveau dossier\File1.cpp</Transaction>
+    <Transaction>2020/09/14 11:40:11.000.687,C:\Users\ralfano\Documents\Embarcadero\Studio\Projets\Project1PCH1.h=P:\Informatique et reseau\traitement d'image\Nouveau dossier\Project1PCH1.h</Transaction>
+    <Transaction>2020/09/14 11:40:12.000.656,C:\Users\ralfano\Documents\Embarcadero\Studio\Projets\Project1.cbproj=P:\Informatique et reseau\traitement d'image\Nouveau dossier\Project1.cbproj</Transaction>
+    <Transaction>2020/09/14 11:40:33.000.702,=P:\Informatique et reseau\traitement d'image\MS8\SNImage -Etudiants.h</Transaction>
+    <Transaction>2020/09/14 11:40:33.000.712,=P:\Informatique et reseau\traitement d'image\MS8\SNImage-Etudiants.cpp</Transaction>
+    <Transaction>2020/09/15 14:54:39.000.098,P:\Informatique et reseau\traitement d'image\MS8\SNImage -Etudiants.h=</Transaction>
+    <Transaction>2020/09/15 14:54:39.000.178,P:\Informatique et reseau\traitement d'image\MS8\SNImage-Etudiants.cpp=</Transaction>
+    <Transaction>2020/09/15 14:54:45.000.574,=P:\Informatique et reseau\traitement d'image\Nouveau dossier\SNImage -Etudiants.h</Transaction>
+    <Transaction>2020/09/15 14:54:45.000.584,=P:\Informatique et reseau\traitement d'image\Nouveau dossier\SNImage-Etudiants.cpp</Transaction>
+    <Transaction>2020/09/15 14:57:19.000.710,=P:\Informatique et reseau\traitement d'image\Nouveau dossier\Unit1.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

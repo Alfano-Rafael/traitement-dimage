@@ -21,6 +21,7 @@ typedef struct Pixel{
 
 class SNImage
 {
+
 private:
 	unsigned long dimensionMax;
 	unsigned long tailleFichier, debutImage;
@@ -106,7 +107,9 @@ public:
 	void Assombrir(int niveau);
 	void SeuillerNoirBlanc(int niveau);
 	void Colorier(Coordonnee coord, int l, int h, Pixel couleur);
-	inline void Colorier(int x, int y, int l, int h, int couleur){}
+	inline void Colorier(int x, int y, int l, int h, int couleur){
+		Colorier(IntVersCoordonnee(x, y), l, h, IntVersPixel(couleur));
+	}
 	void Detourer(int largeurGauche, int largeurDroite, int largeurHaut, int largeurBas, Pixel couleur);
 	inline void Detourer(int largeurGauche, int largeurDroite, int largeurHaut, int largeurBas, int couleur) 
 	{	Detourer(largeurGauche, largeurDroite, largeurHaut, largeurBas, IntVersPixel(couleur));

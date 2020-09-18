@@ -33,26 +33,97 @@ SNImage::~SNImage()
 		}
 	}
 }
+
 void SNImage::Tourner90Droite()
 {}
 void SNImage::Tourner180()
 {}
 void SNImage::Tourner90Gauche()
 {}
-void SNImage::Negatif() 
-{}
-void SNImage::RetournerHorizontal() 
-{}
-void SNImage::RetournerVertical() 
-{}
-void SNImage::NiveauDeGris() 
-{}
-void SNImage::Eclaircir(int niveau) 
-{}
+void SNImage::Negatif()
+{
+	for (int i=0; i < dimensionMax; i++) {
+		for (int j = 0; j < dimensionMax; j++) {
+			image[i][j].rouge=255-image[i][j].rouge;
+			image[i][j].vert=255-image[i][j].vert;
+			image[i][j].bleu=255-image[i][j].bleu;
+		}
+	}
+
+}
+void SNImage::RetournerHorizontal()
+{
+    Pixel temp;
+	for (int i=0; i < hauteur/2; i++) {
+		for (int j = 0; j < largeur; j++) {
+			temp = image[i][j];
+			image[i][j]= image[hauteur-i-1][j];
+			image[hauteur-i-1][j]=temp;
+		}
+	}
+
+}
+void SNImage::RetournerVertical()
+{
+	Pixel temp;
+	for (int i=0; i < hauteur; i++) {
+		for (int j = 0; j < largeur/2; j++) {
+			temp = image[i][j];
+			image[i][j]= image[i][largeur-1-j];
+			image[i][largeur-1-j]=temp;
+		}
+	}
+
+}
+void SNImage::NiveauDeGris()
+{
+	for (int i=0; i < dimensionMax; i++) {
+		for (int j = 0; j < dimensionMax; j++) {
+		  int moy=(image[i][j].rouge+image[i][j].vert+image[i][j].bleu)/3;
+		  image[i][j].rouge=moy;
+		  image[i][j].vert=moy;
+		  image[i][j].bleu=moy;
+		}
+	}
+}
+void SNImage::Eclaircir(int niveau)
+{
+	for (int i=0; i < dimensionMax; i++) {
+		for (int j = 0; j < dimensionMax; j++) {
+		  if((image[i][j].rouge+niveau)  >255) image[i][j].rouge=255;    else image[i][j].rouge+=niveau;
+		  if((image[i][j].vert+niveau)   >255) image[i][j].vert=255;     else image[i][j].vert+=niveau;
+		  if((image[i][j].bleu+niveau)   >255) image[i][j].bleu=255;     else image[i][j].bleu+=niveau;
+		}
+	}
+}
 void SNImage::Assombrir(int niveau) 
-{}
+{
+    for (int i=0; i < dimensionMax; i++) {
+		for (int j = 0; j < dimensionMax; j++) {
+		  if((image[i][j].rouge-niveau)  <0) image[i][j].rouge=0;    else image[i][j].rouge-=niveau;
+		  if((image[i][j].vert-niveau)   <0) image[i][j].vert=0;     else image[i][j].vert-=niveau;
+		  if((image[i][j].bleu-niveau)   <0) image[i][j].bleu=0;     else image[i][j].bleu-=niveau;
+		}
+	}
+}
 void SNImage::SeuillerNoirBlanc(int niveau)
-{}
+{
+   for (int i=0; i < dimensionMax; i++) {
+		for (int j = 0; j < dimensionMax; j++) {
+		   int moy=(image[i][j].rouge+image[i][j].vert+image[i][j].bleu)/3;
+		   if (moy>=niveau) {
+				image[i][j].rouge=255;
+				image[i][j].vert=255;
+				image[i][j].bleu=255;
+		   }
+		   else{
+				image[i][j].rouge=0;
+				image[i][j].vert=0;
+				image[i][j].bleu=0;
+           }
+		}
+   }
+}
 void SNImage::DessinerCarre(Coordonnee coord, int taille, int epaisseur, Pixel couleur) 
 {}
 void SNImage::TracerCercleUnPixel(Coordonnee centre, int rayon, Pixel couleur) 
